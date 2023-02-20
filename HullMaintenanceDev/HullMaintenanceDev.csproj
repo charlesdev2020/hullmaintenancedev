@@ -56,10 +56,25 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\WorkSpace\Document.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\WorkSpace\Document.Designer.cs">
+      <DependentUpon>Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WorkSpace\WorkSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\WorkSpace\WorkSpace.Designer.cs">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\WorkSpace\WorkSpace.resx">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -83,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Module\Analysis\" />
+    <Folder Include="Module\DashBoard\" />
+    <Folder Include="Module\Visualization\" />
+    <Folder Include="Tool\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,6 +2,7 @@
 using DevExpress.XtraBars.Helpers;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
+using HullMaintenanceDev.Module;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,8 @@ namespace HullMaintenanceDev
             get { return ui_progressBar.Step; }
             set { ui_progressBar.Step = value; }
         } // Progress Step
+
+        public WorkSpace WorkSpaceControl { get; set; }
         #endregion
 
         public MainForm()
@@ -104,7 +107,19 @@ namespace HullMaintenanceDev
         {
             EndProgressbar();
 
+            this.WorkSpaceControl = new WorkSpace();
+
             SkinHelper.InitSkinPopupMenu(ui_barStyle);
+        }
+
+        private void OnShownMainForm(object sender, EventArgs e)
+        {
+            if (ui_panelMain.Controls.Contains(this.WorkSpaceControl) == false)
+            {
+                this.WorkSpaceControl.Dock = DockStyle.Fill;
+                ui_panelMain.Controls.Add(this.WorkSpaceControl);
+                this.WorkSpaceControl.BringToFront();
+            }
         }
     }
 

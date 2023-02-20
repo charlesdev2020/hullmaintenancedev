@@ -214,6 +214,7 @@
             this.StatusBar = this.ui_ribbonStatusBar;
             this.Text = "Hull Maintenance";
             this.Load += new System.EventHandler(this.OnLoadMainForm);
+            this.Shown += new System.EventHandler(this.OnShownMainForm);
             ((System.ComponentModel.ISupportInitialize)(this.ui_ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ui_progressBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ui_popupMenu)).EndInit();

@@ -52,3 +52,4 @@ D:\Project\hullmaintenancedev\HullMaintenanceDev\obj\Debug\HullMaintenanceDev.cs
 D:\Project\hullmaintenancedev\HullMaintenanceDev\obj\Debug\HullMaintenanceDev.csproj.CopyComplete
 D:\Project\hullmaintenancedev\HullMaintenanceDev\obj\Debug\HullMaintenanceDev.exe
 D:\Project\hullmaintenancedev\HullMaintenanceDev\obj\Debug\HullMaintenanceDev.pdb
+D:\Project\hullmaintenancedev\HullMaintenanceDev\obj\Debug\HullMaintenanceDev.Module.WorkSpace.resources
